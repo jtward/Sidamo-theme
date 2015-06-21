@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>author</key>
@@ -68,15 +68,57 @@
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>Function call</string>
+			<key>scope</key>
+			<string>entity.name.function, entity.name.method, entity.name.type.object, entity.other.attribute-name</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#E8CAAC</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Interpolation delimiter</string>
+			<key>scope</key>
+			<string>entity.quasi.element.js</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#CE64E3</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>Keyword</string>
 			<key>scope</key>
 			<string>keyword</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string></string>
 				<key>foreground</key>
 				<string>#CE64E3</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Non-highlighted keywords</string>
+			<key>scope</key>
+			<string>keyword.operator.assignment, keyword.operator.spread</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#E8CAAC</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Keyword.operator.accessor</string>
+			<key>scope</key>
+			<string>keyword.operator.accessor</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#E8CAAC</string>
 			</dict>
 		</dict>
 		<dict>
@@ -97,10 +139,30 @@
 			<string>string | punctuation.definition.string</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string></string>
 				<key>foreground</key>
 				<string>#44C944</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>String.unquoted</string>
+			<key>scope</key>
+			<string>string.unquoted</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#E8CAAC</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Object key</string>
+			<key>scope</key>
+			<string>constant.other</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#E8CAAC</string>
 			</dict>
 		</dict>
 		<dict>
@@ -110,10 +172,19 @@
 			<string>support</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string></string>
 				<key>foreground</key>
 				<string>#CE64E3</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>JS Classname</string>
+			<key>scope</key>
+			<string>support.class.js</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#E8CAAC</string>
 			</dict>
 		</dict>
 		<dict>
@@ -124,9 +195,9 @@
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string></string>
+				<string />
 				<key>foreground</key>
-				<string>#6793EB</string>
+				<string>#E8CAAC</string>
 			</dict>
 		</dict>
 		<dict>
@@ -137,7 +208,18 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#DE8667</string>
+				<string>#E8CAAC</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Punctuation.separator.key-value.js</string>
+			<key>scope</key>
+			<string>punctuation.separator.key-value.js</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#E8CAAC</string>
 			</dict>
 		</dict>
 		<dict>
@@ -178,7 +260,7 @@
 				<key>background</key>
 				<string>#6F8BBA26</string>
 				<key>fontStyle</key>
-				<string></string>
+				<string />
 				<key>foreground</key>
 				<string>#080808</string>
 			</dict>
@@ -190,8 +272,6 @@
 			<string>string constant</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string>bold</string>
 				<key>foreground</key>
 				<string>#696969</string>
 			</dict>
@@ -204,9 +284,9 @@
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string></string>
+				<string />
 				<key>foreground</key>
-				<string>#234A97</string>
+				<string>#E8CAAC</string>
 			</dict>
 		</dict>
 		<dict>
@@ -216,8 +296,6 @@
 			<string>string.regexp</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string></string>
 				<key>foreground</key>
 				<string>#FFA54A</string>
 			</dict>
@@ -230,7 +308,7 @@
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string>bold italic</string>
+				<string>italic</string>
 				<key>foreground</key>
 				<string>#FFA54A</string>
 			</dict>
@@ -242,8 +320,6 @@
 			<string>string.regexp constant.character.escape</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string>bold</string>
 				<key>foreground</key>
 				<string>#FF5975</string>
 			</dict>
@@ -266,8 +342,6 @@
 			<string>support.function</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string></string>
 				<key>foreground</key>
 				<string>#E8CAAC</string>
 			</dict>
@@ -279,8 +353,6 @@
 			<string>support.constant</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string></string>
 				<key>foreground</key>
 				<string>#E8CAAC</string>
 			</dict>
@@ -293,7 +365,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#6793EB</string>
+				<string>#E8CAAC</string>
 			</dict>
 		</dict>
 		<dict>
@@ -314,8 +386,6 @@
 			<string>markup.heading | markup.heading entity.name</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string>bold</string>
 				<key>foreground</key>
 				<string>#6793EB</string>
 			</dict>
@@ -418,10 +488,19 @@
 			<dict>
 				<key>background</key>
 				<string>#DCDCDC</string>
-				<key>fontStyle</key>
-				<string>bold</string>
 				<key>foreground</key>
 				<string>#19356D</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>JSX interpolation</string>
+			<key>scope</key>
+			<string>meta.jsx punctuation.definition.brace</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#C97D30</string>
 			</dict>
 		</dict>
 		<dict>
@@ -431,8 +510,6 @@
 			<string>punctuation.definition.string.begin.js, punctuation.definition.string.end.js</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string></string>
 				<key>foreground</key>
 				<string>#44C944</string>
 			</dict>
